@@ -6,25 +6,37 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
+    android:background="#1a5c2c"
     tools:context=".ui.login.LoginActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="24sp"
-        android:layout_marginBottom="24dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true" />
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign in"
+        android:textSize="36sp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/poppins"
+        />
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
         android:hint="Username"
         android:inputType="text"
-        android:layout_below="@id/textView" />
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:layout_marginTop="56dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"
+        />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -32,8 +44,14 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
         android:layout_below="@id/editTextUsername"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="22dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"
+        />
 
     <Button
         android:id="@+id/buttonLogin"
@@ -41,6 +59,10 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:layout_below="@id/editTextPassword"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="32dp"
+        android:background="@drawable/lightbackground_button"
+        android:textColor="#1a5c2c"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"/>
 
 </RelativeLayout>

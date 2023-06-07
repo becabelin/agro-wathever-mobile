@@ -3,14 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".ui.chat.ChatActivity">
+    tools:context=".ui.chat.ChatActivity"
+    android:background="#deffe7">
 
     <TextView
         android:id="@+id/chatTitleTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chat"
-        android:textSize="24sp" />
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textColor="#1a5c2c"
+        android:fontFamily="@font/poppins"
+        />
 
     <ScrollView
         android:id="@+id/chatScrollView"
@@ -35,15 +40,23 @@
 
         <EditText
             android:id="@+id/messageEditText"
-            android:layout_width="match_parent"
+            android:layout_width="335dp"
             android:layout_height="wrap_content"
-            android:hint="Digite sua mensagem" />
+            android:hint="Digite sua mensagem"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:fontFamily="@font/poppins"/>
 
         <Button
             android:id="@+id/sendButton"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:text="Enviar"
+            android:text=">"
+            android:textColor="#1a5c2c"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins"
             android:layout_toEndOf="@id/messageEditText"
             android:layout_alignBottom="@id/messageEditText"
             android:layout_alignTop="@id/messageEditText" />
